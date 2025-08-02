@@ -1,7 +1,8 @@
 const handleRequest = (req, res) => {
-  const [url, method] = [req.url, req.method]
+  const [url, method] = req
 
   if (url === '/') {
+    res.setHeader('Content-Type', 'text/html')
     res.write(`
       <!DOCTYPE html>
       <html lang="en">
@@ -22,6 +23,7 @@ const handleRequest = (req, res) => {
   }
 
   if (url === '/users') {
+    res.setHeader('Content-Type', 'text/html')
     res.write(`
       <!DOCTYPE html>
       <html lang="en">
@@ -52,7 +54,7 @@ const handleRequest = (req, res) => {
       console.log(username)
     })
 
-    res.status = 302
+    res.statusCode = 302
     res.setHeader('Location', '/')
     return res.end()
   }
