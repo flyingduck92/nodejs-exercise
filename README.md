@@ -13,3 +13,5 @@ Blocking and Non-Blocking Code:
 https://nodejs.org/en/docs/guides/dont-block-the-event-loop/
 
 Express.js Official Docs: https://expressjs.com/en/starter/installing.html
+
+Pugjs Official Docs: https://pugjs.org/api/getting-started.html
