@@ -1,0 +1,9 @@
+extends ./layouts/main
+
+block content
+  h1 Welcome to #{pageTitle}
+  form.product-form(action="/",method="POST") 
+    .form-control 
+      label(for="name") Name
+      input#name(type="text",name="name", required)
+    button.btn(type="submit") Add Person

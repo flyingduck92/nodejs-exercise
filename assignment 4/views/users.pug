@@ -1,0 +1,10 @@
+extends ./layouts/main
+
+block content
+  h1 List of #{pageTitle}
+  if people.length > 0 
+    ul.people 
+      each person in people
+        li.person #{person.name}
+  else 
+    h5 There is nobody for now
