@@ -21,3 +21,5 @@ Handlebars Docs: https://handlebarsjs.com/
 EJS Docs: http://ejs.co/#docs
 
 MVC: https://developer.mozilla.org/en-US/docs/Glossary/MVC
+
+Official Routing Docs: https://expressjs.com/en/guide/routing.html
